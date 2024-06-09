@@ -205,12 +205,12 @@ nav {
   padding: 0.5rem 1rem;
 }
 .footer-wrapper {
-  margin: 6rem 0rem;
+  margin: 6rem 0rem 0rem 0rem;
   display: flex;
   margin-top: 10rem;
 }
 .footer-logo-container {
-  width: 245px;
+  width: 350px;
   margin-top: -30%;
   margin-left: -20%;
 }
@@ -431,7 +431,7 @@ nav {
   }
   .footer-section-two {
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: -90px;
   }
   .footer-section-columns {
     margin: 1rem 0rem;
@@ -439,6 +439,14 @@ nav {
   .App {
     max-width: 95vw;
   }
+
+  .footer-logo-container {
+    width: 300px;
+    margin-top: -24%;
+    margin-left: -14%;
+  }
+
+  
 }
 @media (max-width: 600px) {
   .home-bannerImage-container,

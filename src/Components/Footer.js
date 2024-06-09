@@ -1,9 +1,7 @@
 import React from "react";
 import Logo from "../Assets/Logo.png";
-import { BsTwitter } from "react-icons/bs";
-import { SiLinkedin } from "react-icons/si";
-import { BsYoutube } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+
+import { AiOutlineMail, AiOutlineEnvironment } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -12,22 +10,23 @@ const Footer = () => {
         <div className="footer-logo-container">
           <img src={Logo} alt="" />
         </div>
-        <div className="footer-icons">
-          <BsTwitter />
-          <SiLinkedin />
-          <BsYoutube />
-          <FaFacebookF />
-        </div>
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
-          <span>244-5333-7783</span>
-          <span>hello@food.com</span>
+          <div>
+            <h3 style={{color: "#cb0420"}}>Contact Us</h3>
+            <p style={{ display: "flex", alignItems: "center" }}>
+              <AiOutlineMail style={{ marginRight: "10px" }} />
+              Email: <a href="mailto:getintouch@debtcollectforu.com">getintouch@debtcollectforu.com</a>
+            </p>
+            <p style={{ display: "flex", alignItems: "center" }}>
+              <AiOutlineEnvironment style={{ marginRight: "10px" }} />
+              Location: Vienna, Austria
+            </p>
+            {/* <p><AiOutlineMail /> Email: getintouch@debtcolletforu.com</p>
+            <p><AiOutlineEnvironment /> Location: Vienna, Austria</p> */}
+          </div>
         </div>
-        {/* <div className="footer-section-columns">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
-        </div> */}
       </div>
     </div>
   );

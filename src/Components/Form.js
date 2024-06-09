@@ -86,11 +86,14 @@ const Form = () => {
         setSuccessMessage('Thanks For Showing Interest to Join With Us. Your details have been sent. We will contact you shortly.');
       }, (error) => {
         console.log(error.text);
-        setIsLoading(false); // Set loading to false when form submission is successful
+        setIsLoading(false);
+        alert('There was an issue in our Server. We are working on it. Please try again later.');
 
       });
     } catch (error) {
       console.error('Error uploading files:', error);
+      alert('There was an issue in our Server. We are working on it. Please try again later.');
+
     }
   };
 

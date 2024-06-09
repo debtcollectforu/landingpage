@@ -43,7 +43,9 @@ const FormContact = () => {
       })
       .catch((error) => {
         console.log(error.text);
-        setIsLoading(false); // Set loading to false if there's an error during form submission
+        setIsLoading(false); 
+        alert('There was an issue in our Server. We are working on it. Please try again later.');
+
       });
   };
 
